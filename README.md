@@ -90,7 +90,7 @@ This repo will be made public before the start of the contest. (C4 delete this l
 ## Preamble
 The contracts below are part of Badger's SETT system, which is a fork of Yearn V1.
 
-If you are not familiar, see a note on the architecture after the list of contracts
+If you are not familiar with Yearn V1, see a note on the architecture after the list of contracts
 
 
 ## Intro
