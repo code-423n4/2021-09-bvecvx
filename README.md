@@ -120,6 +120,8 @@ For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` whi
 | Controller.sol           | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/deps/Controller.sol        |
 
 
+## Flow of funds for veCVXStrategy
+![Flow of funds for veCVXStrategy](https://github.com/code-423n4/2021-09-bvecvx/tree/main/.github/flow.png)
 
 
 ## veCVXStrategy.sol - 510 LOC
