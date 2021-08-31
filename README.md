@@ -75,14 +75,13 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Sponsorname contest details
-- TBD main award pot
-- TBD gas optimization award pot
+# BadgerDAO bveCVX contest details
+- $30,000 USDC (plus $30,000 in tokens) main award pot
 - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
-- Submit findings [using the C4 form](https://code423n4.com/YYYY-MM-sponsorName-contest/submit)
+- Submit findings [using the C4 form](https://code423n4.com/2021-09-bvecvx-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts TBD XXX XXX XX 00:00 UTC
-- Ends TBD XXX XXX XX 23:59 UTC
+- Starts September 2, 2021 00:00 UTC
+- Ends September 8, 2021  23:59 UTC
 
 This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
