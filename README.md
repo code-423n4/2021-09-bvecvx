@@ -75,7 +75,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# BadgerDAO bveCVX contest details
+# bveCVX by BadgerDAO contest details
 - $30,000 USDC (plus $30,000 in tokens) main award pot
 - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
 - Submit findings [using the C4 form](https://code423n4.com/2021-09-bvecvx-contest/submit)
