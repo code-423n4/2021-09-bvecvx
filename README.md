@@ -87,6 +87,27 @@ This repo will be made public before the start of the contest. (C4 delete this l
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
 
+## Preamble
+The contracts below are part of Badger's SETT system, which is a fork of Yearn V1.
+
+If you are not familiar, see a note on the architecture after the list of contracts
+
+
+## Intro
+The goal of the audit is to find and mitigate security risks for our newest veCVXStrategy.
+
+This strategy uses a token from another of our vault, the CVX Helper Vault (bCVX)
+The veCVX Strategy will receive bCVX via the vault.earn call and it will then redeem the underlying CVX and then lock it in the new Convex Locker Contract.
+
+Due to this interaction, the contracts below are in scope.
+
+Half of the contracts are audited (the ones under Core Contracts) and provide the basic functionality and connection between the other contracts.
+
+The other half of the contract is not audited with veCVXStrategy not even being live currently.
+
+For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` which are contracts written by Convex.finance
+
+
 ## veCVXStrategy.sol - 510 LOC
 
 This is the most important contract for the audit.
@@ -102,7 +123,6 @@ The goal of this audit is to determine if this strategy is safe, if there are wa
 - SUSHI_ROUTER -> To Swap funds, see: `IUniswapRouterV2.sol`
 - Controller -> The Controller that can tell the strategy when to _withdraw, _withdrawAll or _deposit
 - Vault -> The Vault this strategy is attached to
-
 
 ## CvxLocker.sol - 985 LOC
 
@@ -169,4 +189,18 @@ This contract has already been audited, but due to it's interactiong with bCVX a
 - strategy -> The strategy we want audited, see `veCVXStrategy.sol`
 
 
+## A note on Sett's / Yearn V1's architecture
+
+The V1 architecture has 3 contracts:
+- Vault -> Used to handle deposits and withdrawals
+- Strategies -> Used to use the assets and earn yield
+- Controller -> A contract that connects each Vault with each respective Strategy
+
+Loading funds into a strategy is done via `vault.earn` (also `controller.earn`)
+
+At all times, funds should either be in the Vault (idle, not invested), or in the Strategy.
+
+Funds in the Strategy could be idle, i.e. waiting to be invested or kept there to facilitate withdrawals, or they should be invested, earning interest.
+
+Earning rewards, is done by calling a function called `harvest`.
 
