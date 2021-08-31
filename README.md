@@ -86,3 +86,87 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
+
+## veCVXStrategy.sol - 510 LOC
+
+This is the most important contract for the audit.
+
+Fundamentally we receive bCVX (see below), we then withdraw from it (to have CVX) and then we lock the CVX in the new `CvxLocker` by Convex
+
+The goal of this audit is to determine if this strategy is safe, if there are ways to lock funds, grief depositors or if there are exploits that would lead to loss of funds.
+
+
+### External Calls
+- CVX_VAULT -> the CVX Helper Vault (see below), also the want for the Strategy
+- LOCKER -> Contract in whcih we lock funds, see: `CvxLocker.sol`
+- SUSHI_ROUTER -> To Swap funds, see: `IUniswapRouterV2.sol`
+- Controller -> The Controller that can tell the strategy when to _withdraw, _withdrawAll or _deposit
+- Vault -> The Vault this strategy is attached to
+
+
+## CvxLocker.sol - 985 LOC
+
+This is the contract that will lock CVX for 17 weeks
+While this is not a contract we wrote, our strategy interacts with this contract and as such we need to be aware of potential vulnerabilitie in it
+
+### External Calls
+- _tokenAddress -> The token, see `IERC20.sol`
+- stakingProxy -> See `CvxStakingProxy.sol`
+
+## CvxStakingProxy.sol - 182 LOC
+
+This contract stakes the CVX from the CvxLocker as a way to gain staking yield.
+While this is not a contract we wrote, our strategy interacts with this contract and as such we need to be aware of potential vulnerabilitie in it
+
+### External Calls
+- rewards -> The Rewards Locker from Convex, see `ICvxLocker.sol`
+
+## StrategyCvxCrvHelper.sol - 614 LOC
+
+This strategy is the underlying strategy of the `want` we deposit in the `veCVXStrategy`. 
+This token will also sit idle in the instance of the `SettV3` contract we will use as vault for the `veCVXStrategy`.
+
+As such, uncovering and mitigating exploits such as stealing funds are critical to this audit.
+
+This strategy stakes CVX in their staking contract and harvests and auto-compounds the rewards into more CVX
+
+## External Calls
+- cvxCrvRewardsPool -> The pool for staking rewards by Convex
+
+# Core Contracts
+
+While these contracts have all been audited, it's a good idea you familiarize yourself with them as they are part of the system
+
+## BaseStrategy.sol - 417 LOC
+
+This provides some basic methods for all strategies and specifies the way in which they interact with the vault and controller
+
+### External Calls
+- want -> The `want` we want to deposit
+- controller -> The Controller which handles funds
+- vault -> The Vault which handles deposits and withdrawals
+
+
+## SettV3.sol - 386 LOC
+
+This is the contract for the Vault, which handles deposits and withdrawals
+This contract has already been audited, but due to it's interactiong with bCVX and bveCVX it's important you understand how it works
+
+### External Calls
+- token -> The `want` we want to deposit
+- controller -> The Controller which handles funds
+- strategy -> The strategy we want audited, see `veCVXStrategy.sol`
+
+## Controller.sol - 208 LOC
+
+This is the contract for the Controller which connects vaults with strategies
+
+This contract has already been audited, but due to it's interactiong with bCVX and bveCVX it's important you understand how it works
+
+### External Calls
+- token -> The `want` we want to deposit
+- controller -> The Controller which handles funds
+- strategy -> The strategy we want audited, see `veCVXStrategy.sol`
+
+
+
