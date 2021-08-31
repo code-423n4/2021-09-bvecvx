@@ -107,6 +107,20 @@ The other half of the contract is not audited with veCVXStrategy not even being 
 
 For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` which are contracts written by Convex.finance
 
+## Smart Contracts
+
+| Contract                 | Link                                                                                              |
+|--------------------------|---------------------------------------------------------------------------------------------------|
+| veCVXStrategy.sol        | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/veCVXStrategy.sol          |
+| CvxLocker.sol            | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/locker/CvxLocker.sol       |
+| CvxStakingProxy.sol      | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/locker/CvxStakingProxy.sol |
+| StrategyCvxCrvHelper.sol | https://github.com/code-423n4/2021-09-bvecvx/tree/main/bCVX/StrategyCvxCrvHelper.sol              |
+| BaseStrategy.sol         | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/deps/BaseStrategy.sol                |
+| SettV3.sol               | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/deps/SettV3.sol            |
+| Controller.sol           | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/deps/Controller.sol        |
+
+
+
 
 ## veCVXStrategy.sol - 510 LOC
 
