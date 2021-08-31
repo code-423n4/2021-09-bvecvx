@@ -87,6 +87,9 @@ This repo will be made public before the start of the contest. (C4 delete this l
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
 
+## Have any question?
+Message Alex on Discord: Alex The Entreprenerd#5686
+
 ## Preamble
 The contracts below are part of Badger's SETT system, which is a fork of Yearn V1.
 
@@ -121,7 +124,7 @@ For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` whi
 
 
 ## Flow of funds for veCVXStrategy
-![Flow of funds for veCVXStrategy](https://github.com/code-423n4/2021-09-bvecvx/tree/main/.github/flow.png)
+![Flow of funds for veCVXStrategy](https://github.com/code-423n4/2021-09-bvecvx/tree/main/.github/flow.png?raw=true)
 
 
 ## veCVXStrategy.sol - 510 LOC
