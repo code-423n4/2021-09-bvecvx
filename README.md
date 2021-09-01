@@ -97,7 +97,7 @@ This strategy stakes CVX in their staking contract and harvests and auto-compoun
 
 # Core Contracts
 
-While these contracts have all been audited, it's a good idea you familiarize yourself with them as they are part of the system
+While the contracts below have all been audited, it's a good idea you familiarize yourself with them as they are part of the system
 
 Original Audit for BaseStrategy, SettV3, Controller: https://badger.finance/wp-content/uploads/2021/01/HAECHI-AUDIT-BadgerDAO-Smart-Contract-Audit-Report-1.pdf
 
