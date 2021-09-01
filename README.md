@@ -1,80 +1,3 @@
-# ✨ So you want to sponsor a contest
-
-This `README.md` contains a set of checklists for our contest collaboration.
-
-Your contest will use two repos: 
-- **a _contest_ repo** (this one), which is used for scoping your contest and for providing information to contestants (wardens)
-- **a _findings_ repo**, where issues are submitted. (We'll set that one up later.) 
-
-Ultimately, when we launch the contest, this contest repo will be made public and will contain the smart contracts to be reviewed and all the information needed for contest participants. The findings repo will be made public after the contest is over and your team has mitigated the identified issues.
-
-Some of the checklists in this doc are for **C4 (🐺)** and some of them are for **you as the contest sponsor (⭐️)**.
-
----
-
-# Contest setup
-
-## 🐺 C4: Set up repos
-- [ ] Create a new private repo named `YYYY-MM-sponsorname` using this repo as a template.
-- [ ] Get GitHub handles from sponsor.
-- [ ] Add sponsor to this private repo with 'maintain' level access.
-- [ ] Send the sponsor contact the url for this repo to follow the instructions below and add contracts here. (Example message below)
-- [ ] Delete this checklist and wait for sponsor to complete their checklist.
-
-## ⭐️ Sponsor: Provide contest details
-
-Under "SPONSORS ADD INFO HERE" heading below, include the following:
-
-- [ ] Name of each contract and:
-  - [ ] lines of code in each
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
-- [ ] Describe anything else that adds any special logic that makes your approach unique
-- [ ] Identify any areas of specific concern in reviewing the code
-- [ ] Add all of the code to this repo that you want reviewed
-- [ ] Create a PR to this repo with the above changes.
-
----
-
-# ⭐️ Sponsor: Provide marketing details
-
-- [ ] Your logo (URL or add file to this repo - SVG or other vector format preferred)
-- [ ] Your primary Twitter handle
-- [ ] Any other Twitter handles we can/should tag in (e.g. organizers' personal accounts, etc.)
-- [ ] Your Discord URI
-- [ ] Your website
-- [ ] Optional: Do you have any quirks, recurring themes, iconic tweets, community "secret handshake" stuff we could work in? How do your people recognize each other, for example? 
-- [ ] Optional: your logo in Discord emoji format
-
----
-
-# Contest prep
-
-## 🐺 C4: Contest prep
-- [ ] Rename this repo to reflect contest date (if applicable)
-- [ ] Rename contest H1 below
-- [ ] Add link to report form in contest details below
-- [ ] Update pot sizes
-- [ ] Fill in start and end times in contest bullets below.
-- [ ] Move any relevant information in "contest scope information" above to the bottom of this readme.
-- [ ] Add matching info to the [code423n4.com public contest data here](https://github.com/code-423n4/code423n4.com/blob/main/_data/contests/contests.csv))
-- [ ] Delete this checklist.
-
-## ⭐️ Sponsor: Contest prep
-- [ ] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
-- [ ] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2021-06-gro/blob/main/README.md))
-- [ ] Please have final versions of contracts and documentation added/updated in this repo **no less than 8 hours prior to contest start time.**
-- [ ] Ensure that you have access to the _findings_ repo where issues will be submitted.
-- [ ] Promote the contest on Twitter (optional: tag in relevant protocols, etc.)
-- [ ] Share it with your own communities (blog, Discord, Telegram, email newsletters, etc.)
-- [ ] Optional: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] Designate someone (or a team of people) to monitor DMs & questions in the C4 Discord (**#questions** channel) daily (Note: please *don't* discuss issues submitted by wardens in an open channel, as this could give hints to other wardens.)
-- [ ] Delete this checklist and all text above the line below when you're ready.
-
----
-
 # bveCVX by BadgerDAO contest details
 - $30,000 USDC (plus $30,000 in tokens) main award pot
 - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
@@ -83,12 +6,10 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - Starts September 2, 2021 00:00 UTC
 - Ends September 8, 2021  23:59 UTC
 
-This repo will be made public before the start of the contest. (C4 delete this line when made public)
+## Have any question?
+Strategy and Architecture | CET: Alex on Discord: Alex The Entreprenerd#5686
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
-## Have any question?
-Message Alex on Discord: Alex The Entreprenerd#5686
+Architecture | EST : Saj saj#8488
 
 ## Preamble
 The contracts below are part of Badger's SETT system, which is a fork of Yearn V1.
@@ -97,6 +18,8 @@ If you are not familiar with Yearn V1, see a note on the architecture after the 
 
 
 ## Intro
+Badger is a decentralized autonomous organization (DAO) with a single purpose: build the products and infrastructure necessary to accelerate Bitcoin as collateral across other blockchains.
+
 The goal of the audit is to find and mitigate security risks for our newest veCVXStrategy.
 
 This strategy uses a token from another of our vault, the CVX Helper Vault (bCVX)
