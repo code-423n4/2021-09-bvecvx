@@ -1,7 +1,7 @@
 # bveCVX by BadgerDAO contest details
 - $30,000 USDC (plus $60,000 in tokens) main award pot
 - Join [C4 Discord](https://discord.gg/EY5dvm3evD) to register
-- Submit findings [using the C4 form](https://code423n4.com/2021-09-bvecvx-contest/submit)
+- Submit findings [using the C4 form](https://code423n4.com/2021-09-bvecvx-by-badgerdao-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts September 2, 2021 00:00 UTC
 - Ends September 8, 2021  23:59 UTC
