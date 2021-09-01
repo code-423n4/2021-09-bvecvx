@@ -19,7 +19,6 @@ If you are not familiar with Yearn V1, see a note on the architecture after the 
 
 ## Video Intro
 If you like video format, this goes over the code, the goals of the audit and the architecture of Setts
-![https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png)
 https://youtu.be/q43XVyiekSk
 
 ## Intro
