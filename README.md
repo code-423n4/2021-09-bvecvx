@@ -7,7 +7,8 @@
 - Ends September 8, 2021  23:59 UTC
 
 ## Have any question?
-Message Alex on Discord: Alex The Entreprenerd#5686
+Strategy and Architecture | CET: Alex on Discord: Alex The Entreprenerd#5686
+Architecture | EST : Saj saj#8488
 
 ## Preamble
 The contracts below are part of Badger's SETT system, which is a fork of Yearn V1.
