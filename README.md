@@ -17,6 +17,10 @@ The contracts below are part of Badger's SETT system, which is a fork of Yearn V
 If you are not familiar with Yearn V1, see a note on the architecture after the list of contracts
 
 
+## Video Intro
+If you like video format, this goes over the code, the goals of the audit and the architecture of Setts
+https://youtu.be/q43XVyiekSk
+
 ## Intro
 Badger is a decentralized autonomous organization (DAO) with a single purpose: build the products and infrastructure necessary to accelerate Bitcoin as collateral across other blockchains.
 
