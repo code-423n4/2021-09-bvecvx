@@ -40,7 +40,7 @@ For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` whi
 | veCVXStrategy.sol        | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/veCVXStrategy.sol          |
 | CvxLocker.sol            | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/locker/CvxLocker.sol       |
 | CvxStakingProxy.sol      | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/locker/CvxStakingProxy.sol |
-| StrategyCvxCrvHelper.sol | https://github.com/code-423n4/2021-09-bvecvx/tree/main/bCVX/StrategyCvxCrvHelper.sol              |
+| StrategyCvxHelper.sol | https://github.com/code-423n4/2021-09-bvecvx/tree/main/bCVX/StrategyCvxHelper.sol              |
 | BaseStrategy.sol         | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/deps/BaseStrategy.sol                |
 | SettV3.sol               | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/deps/SettV3.sol            |
 | Controller.sol           | https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/deps/Controller.sol        |

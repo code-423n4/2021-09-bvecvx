@@ -17,4 +17,4 @@ https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/contracts/locker/Cv
 
 https://github.com/code-423n4/2021-09-bvecvx/tree/main/veCVX/deps/BaseStrategy.sol
 
-https://github.com/code-423n4/2021-09-bvecvx/tree/main/bCVX/StrategyCvxCrvHelper.sol
+https://github.com/code-423n4/2021-09-bvecvx/tree/main/bCVX/StrategyCvxHelper.sol
