@@ -72,8 +72,8 @@ The goal of this audit is to determine if this strategy is safe, if there are wa
 
 ## CvxLocker.sol - 985 LOC
 
-This is the contract that will lock CVX for 17 weeks
-While this is not a contract we wrote, our strategy interacts with this contract and as such we need to be aware of potential vulnerabilitie in it
+This is the contract that will lock CVX for 16 weeks
+While this is not a contract we wrote, our strategy interacts with this contract and as such we need to be aware of potential vulnerabilitie in it.
 
 ### External Calls
 - _tokenAddress -> The token, see `IERC20.sol`
