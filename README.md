@@ -35,7 +35,7 @@ Half of the contracts are audited (the ones under Core Contracts) and provide th
 
 The other half of the contract is not audited with veCVXStrategy not even being live currently.
 
-For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` which are contracts written by Convex.finance
+For the sake of completeness we also added `CvxLocker` and `CvxStakingProxy` which are contracts written by Convex.finance which is also participating in the contest
 
 ## Smart Contracts
 
