@@ -83,7 +83,7 @@ While this is not a contract we wrote, our strategy interacts with this contract
 ### External Calls
 - rewards -> The Rewards Locker from Convex, see `ICvxLocker.sol`
 
-## StrategyCvxCrvHelper.sol - 614 LOC
+## StrategyCvxHelper.sol - 614 LOC
 
 This strategy is the underlying strategy of the `want` we deposit in the `veCVXStrategy`. 
 This token will also sit idle in the instance of the `SettV3` contract we will use as vault for the `veCVXStrategy`.
@@ -93,7 +93,7 @@ As such, uncovering and mitigating exploits such as stealing funds are critical 
 This strategy stakes CVX in their staking contract and harvests and auto-compounds the rewards into more CVX
 
 ## External Calls
-- cvxCrvRewardsPool -> The pool for staking rewards by Convex
+- cvxRewardsPool -> The pool for staking rewards by Convex
 
 # Core Contracts
 
