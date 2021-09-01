@@ -8,6 +8,7 @@
 
 ## Have any question?
 Strategy and Architecture | CET: Alex on Discord: Alex The Entreprenerd#5686
+
 Architecture | EST : Saj saj#8488
 
 ## Preamble
